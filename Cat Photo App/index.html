@@ -122,9 +122,20 @@ You can include Font Awesome in any app by adding the following code to the top 
             <label><input type="radio" name="indoor-outdoor" /> Outdoor</label>
           </div>
         </div>
-        <label><input type="checkbox" name="personality" /> Loving</label>
-        <label><input type="checkbox" name="personality" /> Lazy</label>
-        <label><input type="checkbox" name="personality" /> Crazy</label>
+
+        <!--  Since Bootstrap's col-xs-* classes are applicable to all form elements, you can use them on your checkboxes too! This way, the checkboxes will be evenly spread out across the page, regardless of how wide the screen resolution is. -->
+        <div class="row">
+          <div class="col-xs-4">
+            <label><input type="checkbox" name="personality" /> Loving</label>
+          </div>
+          <div class="col-xs-4">
+            <label><input type="checkbox" name="personality" /> Lazy</label>
+          </div>
+          <div class="col-xs-4">
+            <label><input type="checkbox" name="personality" /> Crazy</label>
+          </div>
+        </div>
+
         <input type="text" placeholder="cat photo URL" required />
         <button type="submit">Submit</button>
       </form>
